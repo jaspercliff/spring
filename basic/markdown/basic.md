@@ -17,7 +17,7 @@ public void test3(){
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigProxyBeanMethod.class);
         System.out.println("===================");
         ConfigProxyBeanMethod config = context.getBean("configProxyBeanMethod", ConfigProxyBeanMethod.class);
-        User user = config.user();
+        User user = config.user(); //使用代理
         User user1 = config.user();
         Dog dog = config.dog();
         Dog dog1 = config.dog();
